@@ -2,6 +2,10 @@ body {
     margin: 0;
     color: rgb(192, 84, 255);
     background-color: black;
+    font-family: "Inter", "PretendardVariable";
+    font-size: small;
+    line-height: 25px;
+
 }
 
 a {
@@ -17,6 +21,21 @@ h1 {
     margin-left: 45px;
 }
 
+h1 img {
+    width: 85px;
+}
+
+h2 {
+    color: rgb(204, 163, 224);
+    font-family: mont;
+    font-size: 20pt;
+}
+
+h3 {
+    margin-bottom: 7px;
+
+}
+
 ol {
 
     width: 100px;
@@ -24,6 +43,14 @@ ol {
     margin-left: 20px;
     padding: 20px;
     list-style: none;
+    line-height: 15px;
+    letter-spacing: 1px;
+    font-weight: bold;
+
+}
+
+#article {
+    color: rgb(158, 99, 193);
 }
 
 #grid {
@@ -53,3 +80,53 @@ ol {
     }
 
 }
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#wrap {
+    min-height: 100vh;
+    position: relative;
+    width: 100%;
+    
+}
+section {
+    padding-bottom: 300px;
+
+    /* footer의 height값과 동일 */
+}
+footer {
+   
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    /* 내용물에 따라 알맞는 값 설정 */
+    bottom: 0px;
+    position: absolute;
+    border-top: 1px solid rgb(60, 25, 81);
+    
+
+}
+footer a {
+    display: inline-block;
+    margin: 0px 20px 0px 20px;
+    color: rgb(192, 84, 255); font-size: 12px;
+  }
+  footer nav{
+    margin-top: 30px;
+  }
+  
+  footer a:visited {
+    color: rgb(204, 163, 224);
+  }
+  
+  footer p {
+    margin-top: 20; margin-bottom: 0;   
+  }
+  
+  footer p span {
+    display: inline-block;
+  }
