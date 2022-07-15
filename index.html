@@ -14,12 +14,17 @@
             <h1><a href="index.html"></a>
                 <img src="logo.png">
             </h1>
-            <input type="button" value="night" onclick="
-        document.querySelector('body').style.backgroundColor='black';
-        ">
-            <input type="button" value="day" onclick="
-        document.querySelector('body').style.backgroundColor='white';
-        ">
+     
+            <input id="night_day" type="button" value="day" onclick="
+                if(document.querySelector('#night_day').value==='day') {
+                document.querySelector('body').style.backgroundColor='black';
+                document.querySelector('#night_day').value='night';
+                } else {
+                document.querySelector('body').style.backgroundColor='white';
+                document.querySelector('#night_day').value='day';
+                }
+                ">
+
 
             <div id="grid">
                 <ol>
